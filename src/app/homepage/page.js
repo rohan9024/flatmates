@@ -10,13 +10,13 @@ function page() {
     var email = ''
     var photoURL = ''
     var accessToken = ''
-
-    useEffect(() => {
+    
+    if (typeof window !== 'undefined') {
         name = localStorage.getItem("name");
         email = localStorage.getItem("email");
         photoURL = localStorage.getItem("photoURL");
         accessToken = localStorage.getItem("accessToken");
-    }, [])
+    }
 
 
     return (

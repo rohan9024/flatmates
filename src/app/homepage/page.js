@@ -6,13 +6,16 @@ import { AuthContext } from '../../../contexts/AuthContext';
 function page() {
 
     const { user, setUser } = useContext(AuthContext);
-
+    var name = ''
+    var email = ''
+    var photoURL = ''
+    var accessToken = ''
 
     useEffect(() => {
-        const name = localStorage.getItem("name");
-        const email = localStorage.getItem("email");
-        const photoURL = localStorage.getItem("photoURL");
-        const accessToken = localStorage.getItem("accessToken");
+        name = localStorage.getItem("name");
+        email = localStorage.getItem("email");
+        photoURL = localStorage.getItem("photoURL");
+        accessToken = localStorage.getItem("accessToken");
     }, [])
 
 

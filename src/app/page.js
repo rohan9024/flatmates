@@ -31,14 +31,14 @@ export default function Home() {
   }, []);
   return (
     <div className='w-screen h-screen bg-white'>
-      {isLoading ? (
+      {/* {isLoading ? (
         <div className="flex items-center justify-center w-screen h-screen">
           <l-ring size="500" color="white" />
         </div>
-      ) : (
+      ) : ( */}
         <Homepage />
-      )
-      }
+      {/* )
+      } */}
     </div >
 
 
